@@ -1,0 +1,31 @@
+<section class="container home">
+  <app-header></app-header>
+  <section class="inpSection">
+    <div class="inpDiv d-flex flex-column">
+      <img src="../../../assets/rupee.png" alt="" class="rupee-logo" />
+      <label for="amount" class="text-light">Amount</label>
+      <input type="text" name="" id="" class="inp px-3" [(ngModel)]="_curr" />
+    </div>
+    <!-- select the currency to convert -->
+  </section>
+
+  <section class="select mt-5 mb-5">
+    <button class="btn btn-primary button" (click)="convertCurrUSD('usd')">
+      USD
+    </button>
+    <button class="btn btn-primary button">EUR</button>
+    <button class="btn btn-primary button">DIN</button>
+  </section>
+
+  <section class="resultSection mt-5 mb-5">
+    <div *ngIf="convertedResult == ''">
+      <h2 class="text-danger">No Data</h2>
+    </div>
+    <div *ngIf="convertedResult">
+      <div *ngIf="convertedResult.type == 'usd'" class="d-flex">
+        <h2 class="text-light">{{ convertedResult.amount }}</h2>
+        <h2 class="mx-1 text-light">$</h2>
+      </div>
+    </div>
+  </section>
+</section>

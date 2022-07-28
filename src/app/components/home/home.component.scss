@@ -1,0 +1,62 @@
+.home{
+    background-color: black !important;
+    h4{
+        color: #ffff;
+        font-weight: bold;
+    }
+}
+
+.inpSection{
+    width: 100%;
+    margin-bottom: auto;
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inpDiv{
+        width: 50%;
+        position: relative;
+        .rupee-logo{
+            height: 30px;
+            width: 30px;
+            bottom: 35px;
+            left: -16px;
+            position: absolute;
+        }
+        input {
+            height: 6rem;
+            border: 1px solid white;
+            background-color: black;
+            outline: none;
+            color: white;
+            padding: 5px;
+            font-weight: bold;
+            font-size: 5rem;
+            text-align: center;
+        }
+    }
+}
+
+.select{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .button {
+        border-radius: 0px;
+        color: white;
+        background-color: black;
+        border: 1px solid white;
+        margin: 5px;
+    }
+
+}
+    .resultSection{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        res{
+            color: white !important;
+        }
+    }
