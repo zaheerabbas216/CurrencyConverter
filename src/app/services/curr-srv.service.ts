@@ -5,8 +5,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
   providedIn: 'root'
 })
 export class CurrSrvService {
-  _baseURL = "http://localhost:4000/";
-  // _baseURL = "https://nodeauthbackend.herokuapp.com/";
+  // _baseURL = "http://localhost:4000/";
+  _baseURL = "https://nodeauthbackend.herokuapp.com/";
 
   constructor(private http: HttpClient) { }
 
